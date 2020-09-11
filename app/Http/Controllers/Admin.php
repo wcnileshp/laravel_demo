@@ -22,7 +22,7 @@ class Admin extends Controller
 
     	$val = user::select('user_id')->where(
 			array(
-				array('email','=',$request->email),
+                array('email','=',$request->email),
 				array('password','=',$request->password),
 				array('role','=','admin')
 			)
